@@ -1,29 +1,19 @@
-## Minimal [(Free version)](https://minimal-kit-react.vercel.app/)
+## couple-moments-collection 
 
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
+> Este projeto tem como objetivo criar uma simulação de raspadinha para casais que desejam coletar e guardar recordações de momentos especiais juntos. A ideia é que o casal possa "rascar" a raspadinha virtual para revelar uma data ou evento específico, como um aniversário de namoro ou uma viagem planejada, e depois salvar essa recordação em um álbum virtual compartilhado entre eles. O projeto incluiria a criação de uma interface amigável para que o casal possa criar e personalizar suas próprias raspadinhas, bem como um mecanismo para garantir que os eventos sejam sorteados aleatoriamente para manter a surpresa e a emoção.
 
-> Free React Admin Dashboard made with Material-UI components and React.
 
-![preview](public/assets/preview.jpg)
-
-| [Minimal Free](https://minimal-kit-react.vercel.app/) | [Minimal](https://material-ui.com/store/items/minimal-dashboard/) |
-| ----------------------------------------------------- | :---------------------------------------------------------------- |
-| **6** Demo pages                                      | **50+** demo pages                                                |
-| -                                                     | ✓ Multi-language                                                  |
-| -                                                     | ✓ Dark/Light Mode 🌓                                              |
-| -                                                     | ✓ [More components](https://minimals.cc/components)               |
-| -                                                     | ✓ Next.js version                                                 |
-| -                                                     | ✓ TypeScript version                                              |
-| -                                                     | ✓ Design files (Figma & Sketch)                                   |
+| [couple-moments-collection](link) |
+| :---------------------------------------------------------------- |
+| ✓ Data de Conclusão                                               |
+| ✓ Drive de arquivos                                               |
+| ✓ Filtro por Nome                                                 |
+| ✓ Filtro por Status                                               |
+| ✓ Imagem Referencia                                               |
 
 ## Page demo
 
-- [Dashboard](https://minimal-kit-react.vercel.app/dashboard/app)
-- [Users](https://minimal-kit-react.vercel.app/dashboard/user)
-- [Product](https://minimal-kit-react.vercel.app/dashboard/products)
-- [Blog](https://minimal-kit-react.vercel.app/dashboard/blog)
-- [Login](https://minimal-kit-react.vercel.app/login)
-- [Not Found](https://minimal-kit-react.vercel.app/404)
+- [Dashboard](link)
 
 ## Getting started
 
@@ -31,10 +21,6 @@
 - Install dependencies: `npm install` / `yarn install`
 - Start the project: `npm run start` / `yarn start`
 
-## License
-
-Distributed under the MIT License. See [LICENSE](https://github.com/minimal-ui-kit/minimal.free/blob/main/LICENSE.md) for more information.
-
 ## Contact us
 
-Email Us: support@minimals.cc
+Email Us: rafaelangelowow@gmail.com
