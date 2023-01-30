@@ -62,8 +62,8 @@ export default function BlogPostCard({ post, index }) {
   const latestPost = false;
 
   const POST_INFO = [
-    { number: date, icon: 'eva:calendar-fill' },
-    { number: post.finish ? 'Concluido' : 'Andamento', icon: 'eva:heart-fill' },
+    { value: fDate(date) || '-', icon: 'eva:calendar-fill' },
+    { value: post.finish ? 'Concluido' : 'Andamento', icon: 'eva:heart-fill' },
   ];
 
   console.log(urlDrive);
@@ -102,7 +102,7 @@ export default function BlogPostCard({ post, index }) {
               zIndex: 9,
               bottom: -15,
               position: 'absolute',
-              color: 'background.paper',
+              color: 'white',
               ...((latestPostLarge || latestPost) && { display: 'none' }),
             }}
           />
@@ -152,22 +152,25 @@ export default function BlogPostCard({ post, index }) {
           </StyledTitle>
 
           <StyledInfo>
-            {POST_INFO.map((info, index) => (
-              <Box
-                key={index}
-                sx={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  ml: index === 0 ? 0 : 1.5,
-                  ...((latestPostLarge || latestPost) && {
-                    color: 'grey.500',
-                  }),
-                }}
-              >
-                <Iconify icon={info.icon} sx={{ width: 16, height: 16, mr: 0.5 }} />
-                <Typography variant="caption">{info.number}</Typography>
-              </Box>
-            ))}
+            {POST_INFO.map(
+              (info, index) =>
+                info.value !== '-' && (
+                  <Box
+                    key={index}
+                    sx={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      ml: index === 0 ? 0 : 1.5,
+                      ...((latestPostLarge || latestPost) && {
+                        color: 'grey.500',
+                      }),
+                    }}
+                  >
+                    <Iconify icon={info.icon} sx={{ width: 16, height: 16, mr: 0.5 }} />
+                    <Typography variant="caption">{info.value}</Typography>
+                  </Box>
+                )
+            )}
             <Box
               key={index}
               sx={{
@@ -179,13 +182,17 @@ export default function BlogPostCard({ post, index }) {
                 }),
               }}
             >
-              <Iconify icon={'eva:link-fill'} sx={{ width: 16, height: 16, mr: 0.5 }} />
+              {!!date && (
+                <>
+                  <Iconify icon={'eva:link-fill'} sx={{ width: 16, height: 16, mr: 0.5 }} />
 
-              <Typography variant="caption">
-                <Link href={POST_URL} underline="none" target="_blank" rel="noopener noreferrer">
-                  Link do Drive
-                </Link>
-              </Typography>
+                  <Typography variant="caption">
+                    <Link href={POST_URL} underline="none" target="_blank" rel="noopener noreferrer">
+                      Link do Drive
+                    </Link>
+                  </Typography>
+                </>
+              )}
             </Box>
           </StyledInfo>
         </CardContent>

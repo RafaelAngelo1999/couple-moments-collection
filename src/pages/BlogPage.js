@@ -41,7 +41,7 @@ function applySortStatusFilter(array, postStatus) {
 
 export default function BlogPage() {
   const [filterName, setFilterName] = useState('');
-  const [filterStatus, setFilterStatus] = useState(false);
+  const [filterStatus, setFilterStatus] = useState('default');
   const [filterUsing, setFilterUsing] = useState();
 
   const handleFilterByName = (event) => {
