@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/couple-moments-collection/static/js/main.489cf952.js",
+    "main.js": "/couple-moments-collection/static/js/main.9db38fd9.js",
     "static/js/496.989b5026.chunk.js": "/couple-moments-collection/static/js/496.989b5026.chunk.js",
     "index.html": "/couple-moments-collection/index.html",
-    "main.489cf952.js.map": "/couple-moments-collection/static/js/main.489cf952.js.map",
+    "main.9db38fd9.js.map": "/couple-moments-collection/static/js/main.9db38fd9.js.map",
     "496.989b5026.chunk.js.map": "/couple-moments-collection/static/js/496.989b5026.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.489cf952.js"
+    "static/js/main.9db38fd9.js"
   ]
 }
