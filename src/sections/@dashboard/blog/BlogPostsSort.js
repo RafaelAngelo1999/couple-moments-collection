@@ -12,7 +12,7 @@ BlogPostsSort.propTypes = {
 
 export default function BlogPostsSort({ options, value, onSort }) {
   return (
-    <TextField select size="small" value={value} defaultValue={'Default 🔍'} onChange={onSort}>
+    <TextField select value={value} defaultValue={'Default 🔍'} onChange={onSort}>
       {options.map((option, index) => (
         <MenuItem key={option.value + index} value={option.value}>
           {option.label}

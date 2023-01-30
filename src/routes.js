@@ -11,17 +11,17 @@ import Page404 from './pages/Page404';
 export default function Router() {
   const routes = useRoutes([
     {
-      path: '/dashboard',
+      path: '/couple-moments-collection',
       element: <DashboardLayout />,
       children: [
-        { element: <Navigate to="/dashboard/app" />, index: true },
+        { element: <Navigate to="/couple-moments-collection/app" />, index: true },
         { path: 'app', element: <BlogPage /> },
       ],
     },
     {
       element: <SimpleLayout />,
       children: [
-        { element: <Navigate to="/dashboard/app" />, index: true },
+        { element: <Navigate to="/couple-moments-collection/app" />, index: true },
         { path: '404', element: <Page404 /> },
         { path: '*', element: <Navigate to="/404" /> },
       ],
