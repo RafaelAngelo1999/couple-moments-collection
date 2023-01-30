@@ -58,19 +58,15 @@ BlogPostCard.propTypes = {
 export default function BlogPostCard({ post, index }) {
   const { cover, title, date, urlDrive, author, createdAt } = post;
 
-  const latestPostLarge = false;
-  const latestPost = false;
-
   const POST_INFO = [
     { value: fDate(date) || '-', icon: 'eva:calendar-fill' },
     { value: post.finish ? 'Concluido' : 'Andamento', icon: 'eva:heart-fill' },
   ];
 
-  console.log(urlDrive);
   const POST_URL = urlDrive;
 
   return (
-    <Grid item xs={12} sm={latestPostLarge ? 12 : 6} md={latestPostLarge ? 6 : 3}>
+    <Grid item xs={12} sm={6} md={3}>
       <Card sx={{ position: 'relative' }}>
         <StyledCardMedia
           sx={{
@@ -85,12 +81,6 @@ export default function BlogPostCard({ post, index }) {
                 bgcolor: (theme) => (!post.finish ? alpha(theme.palette.grey[900], 0.85) : ''),
               },
             }),
-            ...(latestPostLarge && {
-              pt: {
-                xs: 'calc(100% * 4 / 3)',
-                sm: 'calc(100% * 3 / 4.66)',
-              },
-            }),
           }}
         >
           <SvgColor
@@ -103,51 +93,19 @@ export default function BlogPostCard({ post, index }) {
               bottom: -15,
               position: 'absolute',
               color: 'white',
-              ...((latestPostLarge || latestPost) && { display: 'none' }),
             }}
           />
-          <StyledAvatar
-            alt={author.name}
-            src={author.avatarUrl}
-            sx={{
-              ...((latestPostLarge || latestPost) && {
-                zIndex: 9,
-                top: 24,
-                left: 24,
-                width: 40,
-                height: 40,
-              }),
-            }}
-          />
+          <StyledAvatar alt={author.name} src={author.avatarUrl} />
 
           <StyledCover alt={title} src={cover} />
         </StyledCardMedia>
 
-        <CardContent
-          sx={{
-            pt: 4,
-            ...((latestPostLarge || latestPost) && {
-              bottom: 0,
-              width: '100%',
-              position: 'absolute',
-            }),
-          }}
-        >
+        <CardContent sx={{ pt: 4 }}>
           <Typography gutterBottom variant="caption" sx={{ color: 'text.disabled', display: 'block' }}>
             {fDate(createdAt)}
           </Typography>
 
-          <StyledTitle
-            color="inherit"
-            variant="subtitle2"
-            underline="hover"
-            sx={{
-              ...(latestPostLarge && { typography: 'h5', height: 60 }),
-              ...((latestPostLarge || latestPost) && {
-                color: 'common.white',
-              }),
-            }}
-          >
+          <StyledTitle color="inherit" variant="subtitle2" underline="hover">
             {title}
           </StyledTitle>
 
@@ -161,9 +119,6 @@ export default function BlogPostCard({ post, index }) {
                       display: 'flex',
                       alignItems: 'center',
                       ml: index === 0 ? 0 : 1.5,
-                      ...((latestPostLarge || latestPost) && {
-                        color: 'grey.500',
-                      }),
                     }}
                   >
                     <Iconify icon={info.icon} sx={{ width: 16, height: 16, mr: 0.5 }} />
@@ -177,9 +132,6 @@ export default function BlogPostCard({ post, index }) {
                 display: 'flex',
                 alignItems: 'center',
                 ml: index === 0 ? 0 : 1.5,
-                ...((latestPostLarge || latestPost) && {
-                  color: 'grey.500',
-                }),
               }}
             >
               {!!date && (
