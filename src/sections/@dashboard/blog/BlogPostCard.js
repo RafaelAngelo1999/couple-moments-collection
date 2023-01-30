@@ -7,7 +7,7 @@ import { fDate } from '../../../utils/formatTime';
 //
 import SvgColor from '../../../components/svg-color';
 import Iconify from '../../../components/iconify';
-
+import { directory } from '../../../utils/constantes';
 // ----------------------------------------------------------------------
 
 const StyledCardMedia = styled('div')({
@@ -64,6 +64,7 @@ export default function BlogPostCard({ post, index }) {
   ];
 
   const POST_URL = urlDrive;
+  const SHAPE_AVATAR = `/${directory}/assets/icons/shape-avatar.svg`;
 
   return (
     <Grid item xs={12} sm={6} md={3}>
@@ -85,7 +86,7 @@ export default function BlogPostCard({ post, index }) {
         >
           <SvgColor
             color="paper"
-            src="/assets/icons/shape-avatar.svg"
+            src={SHAPE_AVATAR}
             sx={{
               width: 80,
               height: 36,

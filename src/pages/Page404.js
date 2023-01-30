@@ -4,6 +4,8 @@ import { Link as RouterLink } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
 import { Button, Typography, Container, Box } from '@mui/material';
 
+import { directory } from '../utils/constantes';
+
 // ----------------------------------------------------------------------
 
 const StyledContent = styled('div')(({ theme }) => ({
@@ -19,6 +21,8 @@ const StyledContent = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function Page404() {
+  const ILLUSTRATION_404 = `/${directory}/assets/illustrations/illustration_404.svg`;
+
   return (
     <>
       <Helmet>
@@ -36,11 +40,7 @@ export default function Page404() {
             spelling.
           </Typography>
 
-          <Box
-            component="img"
-            src="/assets/illustrations/illustration_404.svg"
-            sx={{ height: 260, mx: 'auto', my: { xs: 5, sm: 10 } }}
-          />
+          <Box component="img" src={ILLUSTRATION_404} sx={{ height: 260, mx: 'auto', my: { xs: 5, sm: 10 } }} />
 
           <Button to="/" size="large" variant="contained" component={RouterLink}>
             Go to Home

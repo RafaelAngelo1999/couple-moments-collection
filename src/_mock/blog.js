@@ -1,11 +1,12 @@
 import { faker } from '@faker-js/faker';
+import { directory } from '../utils/constantes';
 
 // ----------------------------------------------------------------------
 
 const posts = [
   {
     id: faker.datatype.uuid(),
-    cover: `/assets/images/backgrounds/tiro.png`,
+    cover: `/${directory}/assets/images/backgrounds/tiro.png`,
     title: 'Ir ao Estande de Tiro',
     createdAt: new Date('2023', '00', '01'),
     date: 0,
@@ -15,13 +16,13 @@ const posts = [
     favorite: faker.datatype.number(),
     author: {
       name: faker.name.fullName(),
-      avatarUrl: `/assets/images/avatars/red.png`,
+      avatarUrl: `/${directory}/assets/images/avatars/red.png`,
     },
     finish: false,
   },
   {
     id: faker.datatype.uuid(),
-    cover: `/assets/images/backgrounds/boliche.jpg`,
+    cover: `/${directory}/assets/images/backgrounds/boliche.jpg`,
     title: 'Ir ao Boliche',
     createdAt: new Date('2023', '00', '01'),
     date: new Date('2023', '00', '29'),
@@ -31,14 +32,14 @@ const posts = [
     favorite: faker.datatype.number(),
     author: {
       name: faker.name.fullName(),
-      avatarUrl: `/assets/images/avatars/green.png`,
+      avatarUrl: `/${directory}/assets/images/avatars/green.png`,
     },
     finish: true,
   },
 
   {
     id: faker.datatype.uuid(),
-    cover: `/assets/images/backgrounds/acampar.jpg`,
+    cover: `/${directory}/assets/images/backgrounds/acampar.jpg`,
     title: 'Acampar',
     createdAt: new Date('2023', '00', '01'),
     date: 0,
@@ -48,13 +49,13 @@ const posts = [
     favorite: faker.datatype.number(),
     author: {
       name: faker.name.fullName(),
-      avatarUrl: `/assets/images/avatars/red.png`,
+      avatarUrl: `/${directory}/assets/images/avatars/red.png`,
     },
     finish: false,
   },
   {
     id: faker.datatype.uuid(),
-    cover: `/assets/images/backgrounds/aviao.png`,
+    cover: `/${directory}/assets/images/backgrounds/aviao.png`,
     title: 'Viajar de Avião',
     createdAt: new Date('2023', '00', '01'),
     date: 0,
@@ -64,13 +65,13 @@ const posts = [
     favorite: faker.datatype.number(),
     author: {
       name: faker.name.fullName(),
-      avatarUrl: `/assets/images/avatars/red.png`,
+      avatarUrl: `/${directory}/assets/images/avatars/red.png`,
     },
     finish: false,
   },
   {
     id: faker.datatype.uuid(),
-    cover: `/assets/images/backgrounds/cachoeira.jpg`,
+    cover: `/${directory}/assets/images/backgrounds/cachoeira.jpg`,
     title: 'Ir a Cachoeira',
     createdAt: new Date('2023', '00', '01'),
     date: 0,
@@ -80,13 +81,13 @@ const posts = [
     favorite: faker.datatype.number(),
     author: {
       name: faker.name.fullName(),
-      avatarUrl: `/assets/images/avatars/red.png`,
+      avatarUrl: `/${directory}/assets/images/avatars/red.png`,
     },
     finish: false,
   },
   {
     id: faker.datatype.uuid(),
-    cover: `/assets/images/backgrounds/cavalo.jpg`,
+    cover: `/${directory}/assets/images/backgrounds/cavalo.jpg`,
     title: 'Andar a Cavalo',
     createdAt: new Date('2023', '00', '01'),
     date: 0,
@@ -96,13 +97,13 @@ const posts = [
     favorite: faker.datatype.number(),
     author: {
       name: faker.name.fullName(),
-      avatarUrl: `/assets/images/avatars/red.png`,
+      avatarUrl: `/${directory}/assets/images/avatars/red.png`,
     },
     finish: false,
   },
   {
     id: faker.datatype.uuid(),
-    cover: `/assets/images/backgrounds/comida-mexicana.png`,
+    cover: `/${directory}/assets/images/backgrounds/comida-mexicana.png`,
     title: 'Comer Comida Mexicana',
     createdAt: new Date('2023', '00', '01'),
     date: 0,
@@ -112,13 +113,13 @@ const posts = [
     favorite: faker.datatype.number(),
     author: {
       name: faker.name.fullName(),
-      avatarUrl: `/assets/images/avatars/red.png`,
+      avatarUrl: `/${directory}/assets/images/avatars/red.png`,
     },
     finish: false,
   },
   {
     id: faker.datatype.uuid(),
-    cover: `/assets/images/backgrounds/estadio.jpg`,
+    cover: `/${directory}/assets/images/backgrounds/estadio.jpg`,
     title: 'Ir ao Estadio',
     createdAt: new Date('2022', '01', '02'),
     date: 0,
@@ -128,13 +129,13 @@ const posts = [
     favorite: faker.datatype.number(),
     author: {
       name: faker.name.fullName(),
-      avatarUrl: `/assets/images/avatars/red.png`,
+      avatarUrl: `/${directory}/assets/images/avatars/red.png`,
     },
     finish: false,
   },
   {
     id: faker.datatype.uuid(),
-    cover: `/assets/images/backgrounds/fantasia.jpeg`,
+    cover: `/${directory}/assets/images/backgrounds/fantasia.jpeg`,
     title: 'Ir a Festa Fantasia',
     createdAt: new Date('2023', '00', '01'),
     date: 0,
@@ -144,13 +145,13 @@ const posts = [
     favorite: faker.datatype.number(),
     author: {
       name: faker.name.fullName(),
-      avatarUrl: `/assets/images/avatars/red.png`,
+      avatarUrl: `/${directory}/assets/images/avatars/red.png`,
     },
     finish: false,
   },
   {
     id: faker.datatype.uuid(),
-    cover: `/assets/images/backgrounds/japonesa.jpg`,
+    cover: `/${directory}/assets/images/backgrounds/japonesa.jpg`,
     title: 'Comer Comida Mexicana',
     createdAt: new Date('2023', '00', '01'),
     date: 0,
@@ -160,13 +161,13 @@ const posts = [
     favorite: faker.datatype.number(),
     author: {
       name: faker.name.fullName(),
-      avatarUrl: `/assets/images/avatars/red.png`,
+      avatarUrl: `/${directory}/assets/images/avatars/red.png`,
     },
     finish: false,
   },
   {
     id: faker.datatype.uuid(),
-    cover: `/assets/images/backgrounds/praia.jpg`,
+    cover: `/${directory}/assets/images/backgrounds/praia.jpg`,
     title: 'Ir a Praia',
     createdAt: new Date('2023', '00', '01'),
     date: 0,
@@ -176,13 +177,13 @@ const posts = [
     favorite: faker.datatype.number(),
     author: {
       name: faker.name.fullName(),
-      avatarUrl: `/assets/images/avatars/red.png`,
+      avatarUrl: `/${directory}/assets/images/avatars/red.png`,
     },
     finish: false,
   },
   {
     id: faker.datatype.uuid(),
-    cover: `/assets/images/backgrounds/zoologico.png`,
+    cover: `/${directory}/assets/images/backgrounds/zoologico.png`,
     title: 'Ir ao Zoologico',
     createdAt: new Date('2023', '00', '01'),
     date: 0,
@@ -192,7 +193,7 @@ const posts = [
     favorite: faker.datatype.number(),
     author: {
       name: faker.name.fullName(),
-      avatarUrl: `/assets/images/avatars/red.png`,
+      avatarUrl: `/${directory}/assets/images/avatars/red.png`,
     },
     finish: false,
   },
