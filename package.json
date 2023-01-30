@@ -1,5 +1,6 @@
 {
   "name": "@minimal/material-kit-react",
+  "homepage": "https://RafaelAngelo1999.github.io/couple-moments-collection",
   "author": "minimals.cc",
   "licence": "MIT",
   "version": "1.6.0",
@@ -13,7 +14,9 @@
     "lint:fix": "eslint --fix --ext .js,.jsx ./src",
     "clear-all": "rm -rf build node_modules",
     "re-start": "rm -rf build node_modules && yarn install && yarn start",
-    "re-build": "rm -rf build node_modules && yarn install && yarn build"
+    "re-build": "rm -rf build node_modules && yarn install && yarn build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -75,6 +78,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.7.1"
   },
   "overrides": {
